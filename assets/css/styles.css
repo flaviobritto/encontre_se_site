@@ -1,0 +1,319 @@
+.intro-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-end;
+    min-height: 100vh;
+}
+
+.intro-text-content {
+    width: 20rem;
+}
+
+.intro-text-content h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    line-height: 3rem;
+}
+
+.intro-img img {
+    max-width: 100%;
+    padding-right: 3rem;
+    padding-left: 1rem;
+}
+
+.intro-img2 img {
+    max-width: 100%;
+}
+
+.intro-images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 55%;
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.intro-img {
+    display: block;
+    height: 8rem;
+    width: 15rem;
+    transform: rotate(15deg);
+}
+
+.intro-img2 {
+    display: block;
+    height: 8rem;
+    width: 13rem;
+    transform: rotate(-15deg);
+}
+
+.specialty-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: rap;
+    max-width: 64rem;
+    text-align:center;
+    min-height: 100vh;
+    justify-content: space-around;
+}
+
+.specialty h1 {
+    padding-bottom: 1.5rem;
+}
+
+.specialty-content p {
+    font-size: 1.4rem;
+}
+
+.specialty-space {
+    height: 2rem;
+}
+
+.grid-one-content {
+    display: flex;
+    flex-flow: column wrap;
+    
+    
+    min-height: 100vh;
+}
+
+.grid-main-heading {
+    margin-bottom: 1rem;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.gallery-img {
+    width: 18rem;
+    height: 18rem;
+    background-size: cover;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+}
+
+.gallery-img:hover {
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+}
+
+.post1 {
+    background-image: url("../img/Cura Espiritual.png");
+}
+
+.post2 {
+    background-image: url("../img/Espiritismo parte 1.png");
+}
+
+.post3 {
+    background-image: url("../img/Trabalho Religioso e Espiritual.png");
+}
+
+.post4 {
+    background-image: url("../img/Fé em você!.png");
+}
+
+.post5 {
+    background-image: url("../img/Poderoso ser humano....png");
+}
+
+.post6 {
+    background-image: url("../img/Tarot4.png");
+}
+
+.work-text-content {
+    flex-flow: wrap;
+    flex-wrap: nowrap;
+    padding-top: 6.9rem;
+    justify-content: center;
+}
+
+.contact-content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+    gap: var(--gap);
+    min-height: 100vh;
+}
+
+.contact-text-content, intro-img {
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.contact-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact-form {
+    grid-column: span 2;
+}
+
+.contact-form .form-grid {
+    border:none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.form-grid legend {
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    flex: 1 1 320px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+ .form-group textarea{
+    border: none;
+    background: var(--white-color);
+    padding: 0.5rem 1rem;
+    width: 100%;
+    font-size: 1.5rem;
+    outline: none;
+}
+
+.form-group input:focus,
+ .form-group textarea:focus{
+    box-shadow: 0 0 10px 2px var(--secondary-color);
+}
+
+.form-group button {
+    border: 0.5rem solid var(--white-color);
+    background: none;
+    color: var(--white-color);
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover {
+    background: var(--white-color);
+    color: var(--primary-color);
+}
+
+.form-group ::placeholder {
+    color: #d4d4d4;
+}
+
+.footer {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.footer a {
+    color: var(--primary-color);
+}
+
+.heart {
+    color: red;
+}
+
+.footer p {
+    margin: 0;
+    padding: 1rem;
+}
+
+.close-menu {
+    display: none;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--white-color);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--primary-color);
+    transform: rotate(-90deg);
+    border: 0.1rem solid var(--primary-color);
+    
+}
+
+@media (max-width: 800px) {
+    .intro-content {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .grid-one-content {
+        display: block;
+    }
+
+    .menu {
+        bottom: 0;
+        text-align: center;
+    }
+
+    .menu-content, .menu-content ul{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu-content {
+        height: 100vh;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .close-menu-label::after {
+        content: '≡';
+        position: fixed;
+        z-index: 2;
+        top: 1rem;
+        right: 1rem;
+        background: var(--primary-color);
+        color: var(--white-color);
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    .close-menu:checked~.menu {
+        display: block;
+    }
+
+    .close-menu:checked~.close-menu-label::after {
+        display: block;
+        content: '×';
+    }
+
+    
+}
